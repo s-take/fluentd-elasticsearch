@@ -35,7 +35,7 @@ COPY ./conf/fluent.conf /fluentd/etc/
 RUN touch /fluentd/etc/disable.conf
 
 # Copy plugins
-COPY plugins /fluentd/plugins/
+# COPY plugins /fluentd/plugins/
 COPY entrypoint.sh /fluentd/entrypoint.sh
 
 # Environment variables
